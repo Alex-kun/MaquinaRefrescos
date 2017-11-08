@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<class name="logicaRefrescos.Dispensador" table=dispensadores>
+		<id name="dispId" type="int">
+			<column name="id" />
+			<generator class="increment" />
+		</id>
+
+		<property name="dispClave" type="string">
+			<column name="clave" length="20" not-null="true" />
+		</property>
+		
+		<property name="dispName" type="string">
+			<column name="nombre" length="30" not-null="true" />
+		</property>
+		
+		<property name="dispPrice" type="int">
+			<column name="precio" length="11" not-null="true" />
+		</property>
+		
+		<property name="dispCantidad" type="int">
+			<column name="cantidad" length="11" not-null="true" />
+		</property>
+	</class>
+
+</hibernate-mapping>
