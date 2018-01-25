@@ -12,5 +12,14 @@
 	<classpathentry kind="lib" path="/Users/alejandroquiros/Documents/Lib Hibernate/jandex-2.0.0.Final.jar"/>
 	<classpathentry kind="lib" path="/Users/alejandroquiros/Documents/Lib Hibernate/javassist-3.18.1-GA.jar"/>
 	<classpathentry kind="lib" path="/Users/alejandroquiros/Documents/Lib Hibernate/jboss-logging-3.3.0.Final.jar"/>
+	<classpathentry kind="lib" path="/Users/alejandroquiros/Downloads/mongo/bson-3.0.1.jar"/>
+	<classpathentry kind="lib" path="/Users/alejandroquiros/Downloads/mongo/mongo-java-driver-3.3.0.jar"/>
+	<classpathentry kind="lib" path="/Users/alejandroquiros/Downloads/mongo/mongodb-driver-3.3.0-javadoc.jar"/>
+	<classpathentry kind="lib" path="/Users/alejandroquiros/Downloads/mongo/mongodb-driver-3.3.0-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/alejandroquiros/Downloads/mongo/mongodb-driver-3.3.0.jar"/>
+	<classpathentry kind="lib" path="/Users/alejandroquiros/Downloads/mongo/mongodb-driver-async-3.3.0.jar"/>
+	<classpathentry kind="lib" path="/Users/alejandroquiros/Downloads/mongo/mongodb-driver-core-3.3.0.jar"/>
+	<classpathentry kind="lib" path="/Users/alejandroquiros/Downloads/mongo/morphia-1.2.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="/Users/alejandroquiros/Downloads/mongo/morphia-1.2.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

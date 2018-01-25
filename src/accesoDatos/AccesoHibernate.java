@@ -29,24 +29,20 @@ public class AccesoHibernate implements I_Acceso_Datos {
 		HibernateUtil hu = new HibernateUtil();
 		session = hu.getSessionFactory().openSession();
 		
-		HashMap<Integer, Deposito> deposito = new HashMap<Integer, Deposito>();
-		System.out.println("Inicio consulta Hibernate Depositos");
-    	
-        Query q= session.createQuery("SELECT * FROM depositos");
-        List results = q.list();
-        
-        Iterator depositosIterator= results.iterator();
+		HashMap<Integer, Deposito> depositosCreados = new HashMap<Integer, Deposito>();
 
-        while (depositosIterator.hasNext()){
-            Deposito dep = (Deposito)depositosIterator.next();
-        		System.out.println ( "		Id: " + dep.getId() + " - NombreMoneda: " + dep.getNombreMoneda());  
-        		//HashMap<Integer, Deposito> deposito;
-        		deposito.put(dep.getId(), dep);
-        }
+		Query q = session.createQuery("select e from Deposito e");
+		List results = q.list();
 
-    	System.out.println("Fin Consulta Depositos");
+		Iterator depositosIterator = results.iterator();
 
-		return deposito;
+		while (depositosIterator.hasNext()) {
+			Deposito deposito = (Deposito) depositosIterator.next();
+			
+			depositosCreados.put(deposito.getValor(), deposito);
+		}
+
+		return depositosCreados;
 	}
 
 	@Override
